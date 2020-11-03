@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 第一种 */
+    /* .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    /* 第二种 */
+    /* .wrap {
+        position: relative;
+    }
+    .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    } */
+
+    /* 第三种 */
+    /* .wrap {
+        position: relative;
+    }
+    .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } */
+
+    /* 第四种 */
+    /* .wrap {
+        position: relative;
+    }
+    .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0 0 -50px;
+    } */
+
+    /* 第五种 */
+    /* .wrap {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .box {
+        display: inline-block;
+    } */
+
+    /* 第六种 */
+    /* .wrap {
+        overflow: hidden;
+    }
+    .box {
+        margin: 50% auto;
+        transform: translateY(-50%);
+    } */
+
+    /* 第七种 */
+    /* .wrap {
+        text-align: center;
+        line-height: 300px;
+    }
+    .box {
+        display: inline-block;
+        vertical-align: middle;
+    } */
+
+    /* 第八种 */
+    /* .wrap {
+        display: grid;
+    }
+    .box {
+        align-self: center;
+        justify-self: center;
+    } */
+</style>
+<body>
+    <div style="width: 300px; height: 300px; background-color: gray;" class="wrap">
+        <div style="width: 100px; height: 100px; background-color: hotpink;" class="box"></div>
+    </div>
+</body>
+</html>
